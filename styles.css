@@ -38,12 +38,7 @@ header {
     background: transparent;
     border: none;
 }
-/* #animated {
-    background: linear-gradient(to left, violet, indigo, blue, green,yellow, orange, red);
-    background-clip: text;
-    color: transparent;
-    animation: animated linear infinite;
-} */
+
 @keyframes animated{
     to {
         background-position-x: 500px;
