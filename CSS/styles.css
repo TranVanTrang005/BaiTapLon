@@ -31,20 +31,14 @@ header {
     padding: 15px;
     font-size: 1.2rem;
     border-radius: 4px;
-    background: linear-gradient(to left, violet, indigo, blue, green,yellow, orange, red);
-    animation: animated 5s linear infinite;
     border: 2px solid black;
+    background: linear-gradient(to left, crimson, lightsalmon, violet);
 } 
 .Search input, button {
     background: transparent;
     border: none;
 }
 
-@keyframes animated{
-    to {
-        background-position-x: 500px;
-    }
-}
 /*phan nav*/
 nav {
     background-color: #0063cd;
@@ -118,17 +112,44 @@ input[type=radio] {
 .registration  {
     background-color: white;
     text-align: center;
-    padding: 5px;
+    border: 2px solid #FF7F00;
+}
+
+.registration h2 {
+    background: linear-gradient(to left, violet, indigo, blue, green,yellow, orange, red); 
+    background-clip: text;
+    color: transparent;              
+    padding: 10px;              
+    text-align: center;
+    animation: animated 10s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(30%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+.onclick-slide {
+    animation: slide 0.5s linear;
+}
+
+@keyframes animated{
+    100% {
+        background-position-x: 500px;
+    }
 }
 
 .registration-form {
-    width: 80%;
     background-color: #0063cd;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    box-sizing: border-box;
 }
 
 .registration-form input,
@@ -145,15 +166,38 @@ input[type=radio] {
 .registration-form input:focus,
 .registration-form select:focus,
 .registration-form textarea:focus {
-    border-color: #950b0b;
+    border-color: violet;
     outline: none;
 }
 
 .registration button {
-    width: 10%;
-    height: 5%;
-    background-color: aqua;
+   width: 150px;
+   height: 50px;
+   margin: 10px;
+   background: linear-gradient(115deg, violet, blue, green, orange, red);
+   border-radius: 6px;
+   position: relative;
 }
+
+.registration button span {
+    width: 96%;
+    height: 88%;
+    background-color: #111;
+    color: aliceblue;
+    line-height: 44px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.registration button:hover{
+    animation: animated 3s linear infinite;
+}
+
 
 
 
