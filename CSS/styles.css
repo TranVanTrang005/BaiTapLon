@@ -1,5 +1,6 @@
 :root {
     --x: 7px;
+    --width-size: 999px;
 }
 
 *{
@@ -8,7 +9,7 @@
 }
 
 body {
-    width: 999px;
+    width: var(--width-size);
     margin: 0 auto;
     background-color: #e9ebee;
 }
@@ -68,20 +69,6 @@ ul.menu > li >a {
     padding: 0.5rem;
 }
 
-/* .sub {
-    position: relative;
-}
-
-.submenu {
-    visibility: collapse;
-    position: absolute;
-    opacity: 0;
-}
-
-.sub:hover .submenu {
-    visibility: visible;
-    opacity: 1;
-} */
 .sub {
     position: relative;
 }
@@ -107,7 +94,7 @@ ul.menu > li >a {
     z-index: 999;        
 }
  
-/**/
+/*aside*/
 aside img{
     width: 100%;
 }
@@ -117,7 +104,7 @@ input[type=radio] {
     margin: 0;
 }
 
-.container {
+.img-group {
     position: relative;
 }
 
@@ -126,6 +113,53 @@ input[type=radio] {
     bottom: 5%;
     left: 45%;
 }
+
+/**/
+.registration  {
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.registration-form {
+    width: 80%;
+    background-color: #0063cd;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.registration-form input,
+.registration-form select, 
+.registration-form textarea {
+    display: block; 
+    width: 40%;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: var(--x);
+}
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus {
+    border-color: #950b0b;
+    outline: none;
+}
+
+.registration button {
+    width: 10%;
+    height: 5%;
+    background-color: aqua;
+}
+
+
+
+
+
+
 
 
 
