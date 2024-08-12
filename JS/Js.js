@@ -53,7 +53,7 @@ window.onload = function() {
                 x.style.border="2px solid red"
             }
             else { 
-                count++;
+                count2++;
                 x.style.border= null;
             }
         }
