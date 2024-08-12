@@ -18,7 +18,7 @@ window.onload = function() {
     }
 
      //timeChange
-     let count1 = -1;
+     let count1 = 0;
      function changeImg() {
         count1=(count1+1)%3;
         img.src = `image/tuyensinh_${count1}.png`;
