@@ -1,0 +1,22 @@
+.info {
+    
+}
+
+.faculty {
+    width: 50%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.faculty > div {
+    background:linear-gradient(blue, lightblue);
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.faculty img {
+    width: 100%;
+    height: 15rem;
+    border: 3px solid black;
+}
