@@ -79,3 +79,13 @@
     text-align: center;
     
   }
+
+  .media-and-copyright-container {
+    background-color: var(--ou-bgr-darker);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
