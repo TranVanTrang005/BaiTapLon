@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/CTDT.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="../JS/Search.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,77 +20,121 @@
         </div>
         <form class="Search">
             <input type="text" placeholder="Search.." id="search"/>
+            <p class="request">Vui lòng viết có dấu</p>
             <button type="button" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </header>
     <main class="info">
       <h1 class="info-title">THÔNG TIN NGÀNH KHOA</h1>
       <div class="faculties flex">  
-        <div class="faculty">
+        <div class="faculty" id="CNTT">
           <div>
             <div class="info-box">
               <img src="../image/Khoa_CNTT.jpg" alt="CNTT">
               <div class="detail">Khoa hiện đang đào tạo bậc học Đại Học (4 năm) với 06 chương trình theo định hướng nghề nghiệp: Khoa học máy tính,
                 Công nghệ thông tin, Công nghệ thông tin tăng cường tiếng Nhật, Hệ thống thông tin quản lý,
-                Ngành Trí tuệ nhân tạo thuộc chương trình chuẩn và ngành Khoa học máy tính thuộc chương trình chất lượng cao.
-             </div>
-            </div>
-            
+                Ngành Trí tuệ nhân tạo thuộc chương trình chuẩn và ngành Khoa học máy tính thuộc chương trình chất lượng cao.</div>
+            </div>            
             <h3>Khoa Công Nghệ Thông Tin</h3>
           </div>
           
         </div>
-        <div class="faculty">
+        <div class="faculty" id="Law">
           <div>
-            <img src="../image/Khoa_Law.jpg" alt="Law">
+            <div class="info-box">
+              <img src="../image/Khoa_Law.jpg" alt="Law">
+              <div class="detail">Khoa Luật đào tạo hai ngành Luật và Luật Kinh tế. Sinh viên tốt nghiệp được cấp bằng cử nhân Luật và
+                 cử nhân Luật Kinh tế có trình độ chuyên môn vững vàng về kiến thức luật học và kiến thức bổ trợ khác.</div>
+            </div>
             <h3>Khoa Luật</h3>
           </div>  
         </div>      
-        <div class="faculty">
+        <div class="faculty" id="TCNH">
           <div>
-            <img src="../image/Khoa_TCNH" alt="TCNH">
+            <div class="info-box">
+              <img src="../image/Khoa_TCNH" alt="TCNH">
+              <div class="detail">Khoa Tài chính – Ngân Hàng thực hiện nhiệm vụ đào tạo với 3 chuyên ngành chính là: chuyên ngành tài chính doanh
+              nghiệp, chuyên ngành đầu tư tài chính (Kinh doanh chứng khoán) và chuyên ngành Ngân Hàng.</div>
+            </div>
             <h3>Khoa Tài Chính Ngân Hàng</h3>
           </div>  
         </div>
-        <div class="faculty">
-          <div>
-            <img src="../image/Khoa_KT&QLC.jpg" alt="Law">
+        <div class="faculty" id="KT&QLC">
+          <div >
+            <div class="info-box">
+              <img src="../image/Khoa_KT&QLC.jpg" alt="KT&QLC">
+              <div class="detail">Khoa Kinh tế và Quản lý công được thành lập năm 2007 trên cơ sở tách khoa Kinh tế - Quản trị Kinh doanh thành khoa Kinh tế và khoa Quản trị Kinh doanh.
+                Đến năm 2010, Khoa Kinh tế đổi tên thành khoa Kinh tế và Luật để phù hợp với hai ngành đào tạo của khoa là ngành Kinh tế và ngành Luật Kinh tế.</div>
+            </div>
             <h3>Khoa Kinh Tế & Quản Lý Công</h3>
           </div>  
         </div>
-        <div class="faculty">
+        <div class="faculty"  id="CNSH">
           <div>
-            <img src="../image/Khoa_CNSH.jpg" alt="Law">
+            <div class="info-box">
+              <img src="../image/Khoa_CNSH.jpg" alt="CNSH">
+              <div class="detail"> Được thành lập từ tháng 6 năm 1991, đầu tiên được đặt tên là “ Ban Kỹ thuật sinh học”.
+                Năm 1993, Trường có quyết định đổi tên thành “Khoa Công nghệ sinh học”, là Trường đầu tiên tại Việt Nam được
+                Bộ Giáo dục và Đào tạo cho phép đào tạo ngành Công nghệ sinh học.</div>
+            </div>
             <h3>Khoa Công Nghệ Sinh Học</h3>
           </div>  
         </div>
-        <div class="faculty">
+        <div class="faculty" id="QTKD">
           <div>
-            <img src="../image/Khoa_QTKD.jpg" alt="Law">
+            <div class="info-box">
+              <img src="../image/Khoa_QTKD.jpg" alt="QTKD">
+              <div class="detail">Ngành Quản trị kinh doanh gồm 2 chuyên ngành: Quản trị kinh doanh tổng hợp và Khởi nghiệp và đổi mới sáng tạo:<br>
+                -    Quản trị nhân lực (mã ngành: 7340404) <br>
+                -    Kinh doanh quốc tế (mã ngành: 7340120)<br>
+                -    Marketing (mã ngành: 7340115)<br>
+                -    Du lịch (mã ngành: 7810101)<br>
+                -    Logistics và quản lý chuỗi cung ứng (7510605)</div>
+            </div>
             <h3>Khoa Quản Trị Kinh Doanh</h3>
           </div>  
         </div>
-        <div class="faculty">
+        <div class="faculty" id="KT-KT">
           <div>
-            <img src="../image/Khoa_KT_KT.jpg" alt="Law">
+            <div class="info-box">
+              <img src="../image/Khoa_KT_KT.jpg" alt="KT_KT">
+              <div class="detail">Khoa Kế toán – Kiểm toán đào tạo và cung cấp nguồn nhân lực kế toán, kiểm toán cho các doanh nghiệp và tổ chức
+                 trong nền kinh tế. Khoa có quan hệ hợp tác chặt chẽ với các doanh nghiệp, công ty kiểm toán và với các tổ chức nghề nghiệp
+                 như Hội Kế toán TP. HCM (HAA), Hội Kiểm toán viên hành nghề (VACPA), Hội Kế toán công chứng Anh quốc (ACCA). </div>
+            </div>
             <h3>Khoa Kế Toán - Kiểm Toán</h3>
           </div>  
         </div>
-        <div class="faculty">
-          <div>
-            <img src="../image/Khoa_XD.jpg" alt="Law">
+        <div class="faculty" id="XD">
+          <div >
+            <div class="info-box">
+              <img src="../image/Khoa_XD.jpg" alt="XD">
+              <div class="detail">Khoa Xây Dựng - Trường Đại học Mở TP.HCM, được thành lập từ năm 1992. Tiền thân là Khoa Công thôn,
+                 Khoa Kỹ thuật Công nghệ và Khoa Xây dựng - Điện. Đến năm 2018 chính thức có tên là Khoa Xây Dựng.</div>
+            </div>
             <h3>Khoa Xây DỰng</h3>
           </div>  
         </div>
-        <div class="faculty">
+        <div class="faculty" id="NN">
           <div>
-            <img src="../image/Khoa_NN.jpg" alt="Law">
+            <div class="info-box">
+              <img src="../image/Khoa_NN.jpg" alt="NN">
+              <div class="detail">Khoa Ngoại ngữ định hướng đào tạo các cử nhân Ngoại ngữ có kiến thức chuyên môn tốt, đạt chuẩn năng lực ngôn ngữ
+                 theo yêu cầu của Bộ Giáo dục và Đào tạo, năng động, sáng tạo, có khả năng hội nhập cao vào thị trường lao động quốc tế đáp ứng 
+                 nhu cầu của cá nhân người học và của xã hội.</div>
+            </div>           
             <h3>Khoa Ngoại Ngữ</h3>
           </div>  
         </div>
-        <div class="faculty">
+        <div class="faculty" id="XHH+CTXH_DNA">
           <div>
-            <img src="../image/Khoa_XHH+CTXH_DNA.jpg" alt="Law">
+            <div class="info-box">
+              <img src="../image/Khoa_XHH+CTXH_DNA.jpg" alt="XHH+CTXH_DNA">
+              <div class="detail">Khoa Xã hội học - Công tác xã hội - Đông Nam Á đào tạo ngành Đông Nam Á học từ năm 1991, ngành Xã hội học năm 1992. 
+                Năm 2004, Khoa chính thức đào tạo ngành Công tác xã hội khi Bộ giáo dục và đào tạo cho phép cấp mã ngành. 
+                Năm 2023, Khoa đào tạo thêm một ngành mới: Tâm lý học.
+                Trường Đại học Mở TPHCM và Khoa là những đơn vị đầu tiên trên cả nước đào tạo XHH-CTXH-ĐNÁ.</div>
+            </div>
             <h3>Khoa XHH-CTXH_ĐNA</h3>
           </div>  
         </div>

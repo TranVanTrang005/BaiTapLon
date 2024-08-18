@@ -9,12 +9,11 @@ window.onload = function() {
         } 
     }
     function animeted() {
-        setTimeout(function() {
-            img.classList.add("onclick-slide");
-            setTimeout(function() {
-                img.classList.remove("onclick-slide");
-            }, 500);
-        }, 1);
+        // img.classList.add("onclick-slide");
+        // setTimeout(function() {
+        //     img.classList.remove("onclick-slide");
+        // }, 500);
+        img.classList.toggle("onclick-slide");
     }
 
      //timeChange
