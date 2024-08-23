@@ -1,14 +1,15 @@
-.info {
+
+.infos {
     text-align: center;
 }
 
-.info > h1 {
+.infos > h1 {
     color:  #0063cd;
     text-shadow: 2px 3px violet ;
     animation: blink 6s linear infinite;
 }
 
-.info h3 {
+.infos h3 {
     padding-bottom: 10px ;
 }
 

@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener("load", function() {
     /*nav*/
     let img = document.getElementById("ads-image");
     let inputs = document.querySelectorAll("input[type=radio]");
@@ -38,26 +38,12 @@ window.onload = function() {
             animeted();
         }
     } 
-   
+    /*nav*/
+    //scroll
 
-    /*registration*/
-
-    let reg =document.getElementById("Sign up");
-    let info= document.querySelectorAll(".registration-form input, select");
-    let flag= true;
-    reg.onclick = function() {
-        for(let x of info) {
-            if(x.value=="") {
-                x.placeholder="Vui lòng nhập thông tin!";
-                x.style.border="2px solid red";
-                flag = false;
-            }
-            else { 
-                x.style.border= null;
-            }
-        }
-        if(flag) {
-            alert(`Chào ${info[0].value} chúng tôi đã tiếp nhận thông tin và sẽ sớm phản hồi lại bạn. Chân thành cảm ơn!` );
-        }
+    function scrollToFaculty(id) {
+        let target = document.getElementById(id);
+        target.scrollIntoView({ behavior: "smooth" });
     }
-}
+    
+})

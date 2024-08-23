@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta value="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/gioithieu.css" />
+    <link rel="stylesheet" href="../CSS/general.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -16,12 +17,13 @@
     <link rel="stylesheet" href="../CSS/gioithieuchung.css" />
     <script src="../JS/gioithieu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../JS/modal.js"></script>
   </head>
   <body>
     <!-- MAIN-CONTAINER -->
     <div class="main-container">
       <!-- HEADER -->
-      <header class="flex">
+      <header class="flex center space-between">
         <div class="flex">
           <img src="../image/logoOU.png" alt="LOGO-OU" />
           <h2>
@@ -39,47 +41,49 @@
 
       <!-- NAVIGATION -->
 
-      <nav class>
-        <ul class="menu flex">
+      <nav>
+        <ul class="menu flex center space-between">
           <li class="sub">
             <a href="#"><i class="fa-solid fa-house"></i></a>
             <ul class="menu submenu">
-              <li><a href="#">Trang Chủ OU</a></li>
-              <li><a href="#">Trang Tuyển Sinh</a></li>
+              <li><a href="https://ou.edu.vn">Trang Chủ OU</a></li>
+              <li><a href="../index.html">Trang Tuyển Sinh</a></li>
             </ul>
           </li>
           <li class="sub">
             <a href="#">GIỚI THIỆU</a>
             <ul class="menu submenu">
-              <li><a href="#">Lịch Sử Phát Triển</a></li>
-              <li><a href="#">Vì Sao Nên Chọn OU?</a></li>
+              <li><a href="../HTML/gioithieu.html">Lịch Sử Phát Triển</a></li>
+              <li>
+                <a href="../HTML/visaochonOU.html">Vì Sao Nên Chọn OU?</a>
+              </li>
             </ul>
           </li>
           <li class="sub">
             <a href="#">NGHÀNH ĐÀO TẠO</a>
             <ul class="menu submenu">
-              <li><a href="#">Các Khoa/Ngành Đại Trà</a></li>
+              <li><a href="../HTML/CTDT.html">Các Khoa/Ngành Đại Trà</a></li>
               <li><a href="#">Chương Trình Chất Lượng Cao</a></li>
             </ul>
           </li>
           <li class="sub">
-            <a href="#">MÔI TRƯỜNG HỌC TẬP</a>
+            <a href="../HTML/diadiemhoc.html">MÔI TRƯỜNG HỌC TẬP</a>
             <ul class="menu submenu">
-              <li><a href="#">Cơ Sở Vật Chất</a></li>
-              <li><a href="#">Địa Điểm Học Tập</a></li>
+              <li><a href="../HTML/diadiemhoc.html#CSVC">Cơ Sở Vật Chất</a></li>
+              <li><a href="../index.html#DDHT">Địa Điểm Học Tập</a></li>
             </ul>
           </li>
-          <li class="sub"><a href="#">ĐĂNG KÍ TƯ VẤN</a></li>
+          <li><a href="../index.html#registration">ĐĂNG KÍ TƯ VẤN</a></li>
           <li class="sub contact"><a href="#">LIÊN HỆ</a></li>
         </ul>
       </nav>
-      <aside class="ads">
-        <div class="banner-container">
-          <img src="../image/tuyensinh_1.png" alt="TS" id="ads-image" />
+      <aside>
+        <div class="img-group">
+          <img src="../image/tuyensinh_0.png" alt="TS" id="ads-image" />
           <div class="radio-group">
-            <input type="radio" value="1" checked="checked" />
+            <input type="radio" value="0" checked="checked" />
+            <input type="radio" value="1" />
             <input type="radio" value="2" />
-            <input type="radio" value="3" />
           </div>
         </div>
       </aside>

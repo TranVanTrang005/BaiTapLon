@@ -1,0 +1,49 @@
+/* SECTION */
+
+.article h3 {
+  color: var(--blood);
+}
+
+.article h4 {
+  color: blue;
+}
+
+.article-img-box {
+  width: 480px;
+  height: auto;
+  margin: 20px auto 20px auto;
+}
+
+/* SECTION */
+
+/* CAROUSEL */
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.thumb-box {
+  width: 800px;
+  overflow: auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.thumb-box > div {
+  width: 20%;
+  margin: 0 10px 0 10px;
+}
+
+.thumb-box > div > img {
+  width: 100px;
+  filter: brightness(50%);
+  transition: 250ms linear;
+}
+
+.thumb-selected {
+  filter: none !important;
+}
+
+/* CAROUSEL */

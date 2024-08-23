@@ -1,129 +1,45 @@
-:root {
-    --x: 7px;
-    --width-size: 999px;
-}
-
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*information*/
+#information {
+    background-color: white;
+    /* margin-top: 0.5rem; */
     box-sizing: border-box;
 }
 
-body{
-    background-color: #e9ebee;
+#information h2 {
+    color: #ff0000;
+    padding-left: 0.5rem;
 }
 
-header, nav, main, aside, se {
-    width: var(--width-size);
-    margin: 0 auto;
-    /* background-color: #e9ebee; */
-    font-size: 16px;
+.admission-information {
+    width: 70%;
 }
 
-
-/*ALL*/
-.flex {
-    display: flex;
+.admission-information div{
+    flex-wrap: wrap;
 }
 
-.center {
-    align-items: center;  
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-a {
-    text-decoration: none;
-}
-
-/*header*/
-header {
-    background-color: #1150a0;
-    color: white;
-    font-size: 1rem;
-}
-.Search {
-    display: block;
-    /* align-items: center; */
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: var(--x);
-    border: 2px solid black;
-    background: linear-gradient(to left, crimson, lightsalmon, violet);
-} 
-.Search input, button {
-    background: transparent;
-    border: none;
-}
-
-/*phan nav*/
-nav {
-    background-color: #0063cd;
-    margin-top: 5px;
-    border-radius: var(--x) var(--x) 0 0;
-}
-
-ul.menu {
-    list-style-type: none;
-    padding:0 ;
-    margin: 0;
-}
-
-ul.menu > li >a:hover {
-    background-color: #07c2fa;
-} 
-
-ul.menu > li >a {
-    text-decoration: none;
-    color: whitesmoke;
-    display: block;
+.admission-information div div {
+    width: 50%;
     padding: 0.5rem;
 }
 
-.sub {
-    position: relative;
-}
-
-.submenu {
-    visibility: hidden; 
-    opacity: 0;         
-    position: absolute;
-    border: 2px solid #0063cd;
-}
-
-.submenu >li >a {
-    color: #000 !important;
-    background-color: #e9ebee;
-    padding: 0.3rem;
-    border-bottom: 1px solid whitesmoke;
-}
-
-.sub:hover .submenu {
-    visibility: visible; 
-    opacity: 1; 
-    transition: opacity 0.5s ease-out;  
-    z-index: 999;        
-}
- 
-/*aside*/
-aside img{
+.admission-information img{
     width: 100%;
+    border: 1px solid #000;
 }
 
-.radio-group > input[type=radio] {
-    padding: 0;
-    margin: 0;
+.news {
+    width: 30%;
+    border: 2px solid wheat;
 }
 
-.img-group {
-    position: relative;
+.news > div{
+    padding: 0.5rem 0.7rem;
+    border-bottom: 1px solid grey;
 }
 
-.radio-group {
-    position: absolute;
-    bottom: 5%;
-    left: 45%;
+.news > div:last-child {
+    border: none;
 }
 
 /*registration*/
@@ -217,49 +133,7 @@ aside img{
     animation: animated 3s linear infinite;
 }
 
-/*information*/
-#information {
-    background-color: white;
-    margin-top: 0.5rem;
-    box-sizing: border-box;
-}
 
-#information h2 {
-    color: #0063cd;
-    padding-left: 0.5rem;
-}
-
-.admission-information {
-    width: 70%;
-}
-
-.admission-information div{
-    flex-wrap: wrap;
-}
-
-.admission-information div div {
-    width: 50%;
-    padding: 0.5rem;
-}
-
-.admission-information img{
-    width: 100%;
-    border: 1px solid #000;
-}
-
-.news {
-    width: 30%;
-    border: 2px solid wheat;
-}
-
-.news > div{
-    padding: 0.5rem 0.7rem;
-    border-bottom: 1px solid grey;
-}
-
-.news > div:last-child {
-    border: none;
-}
 
 
 
