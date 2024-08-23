@@ -39,11 +39,5 @@ window.addEventListener("load", function() {
         }
     } 
     /*nav*/
-    //scroll
-
-    function scrollToFaculty(id) {
-        let target = document.getElementById(id);
-        target.scrollIntoView({ behavior: "smooth" });
-    }
     
 })
