@@ -316,7 +316,7 @@ aside img{
 /* MODAL */
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 30px; /* Location of the box */

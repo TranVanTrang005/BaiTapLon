@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../CSS/CTDT.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="../JS/Search.js"></script>
+    <script src="../JS/modal.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -223,6 +224,34 @@
         </div>
         
       </footer>
+      <!-- MODAL -->
+  
+      <div class="modal" id="myModal">
+        <div class="modal-container animate__animated animate__fadeInDownBig">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>LIÊN HỆ</h2>
+          </div>
+          <div class="modal-body">
+            <form class="contact-form" id="contact-form">
+              <h5>Họ và tên</h5>
+              <input type="text" class="info" id="name" />
+              <h5>Email</h5>
+              <input type="text" class="info" id="email" />
+              <h5>Tiêu đề</h5>
+              <input type="text" class="info" id="title" />
+              <h5>Nội dung</h5>
+              <textarea rows="5" cols="80" class="info" id="content"></textarea>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="abort" id="abort">Hủy</button>
+            <button class="submit" id="submit">Gửi</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- MODAL -->
       
 </body>
 </html>

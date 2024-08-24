@@ -6,10 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/media.css">
     <script src="JS/nav.js"></script>
     <script src="JS/registration.js"></script>
     <script src="JS/modal.js"></script>
     <script src="JS/DDHT.js"></script>
+    <script src="JS/media.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -23,36 +25,43 @@
             <button type="button" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
          </form>
     </header>
+    <!-- nav -->
+    <ul id="showmenu">
+      <li class="showmenu-btn"></li>
+      <li class="showmenu-btn"></li>
+      <li class="showmenu-btn"></li>
+    </ul>
     <nav>
-        <ul class="menu flex center space-between">
-            <li class="sub"><a href="#"><i class="fa-solid fa-house"></i></a>
-                <ul class="menu submenu">
-                    <li><a href="https://ou.edu.vn" target="_blank">Trang Chủ OU</a></li>
-                    <li><a href="../index.html">Trang Tuyển Sinh</a></li>
-                </ul>
-            </li>
-            <li class="sub"><a href="#">GIỚI THIỆU</a>
-                <ul class="menu submenu">
-                    <li><a href="HTML/gioithieu.html">Lịch Sử Phát Triển</a></li>
-                    <li><a href="HTML/visaochonOU.html">Vì Sao Nên Chọn OU?</a></li>
-                </ul>
-            </li>
-            <li class="sub"><a href="#">NGHÀNH ĐÀO TẠO</a>
-                <ul class="menu submenu">
-                    <li><a href="HTML/CTDT.html">Các Khoa/Ngành Đại Trà</a></li>
-                    <li><a href="#">Chương Trình Chất Lượng Cao</a></li>
-                </ul>
-            </li>
-            <li class="sub"><a href="HTML/diadiemhoc.html">MÔI TRƯỜNG HỌC TẬP</a>
-                <ul class="menu submenu">
-                    <li><a href="HTML/diadiemhoc.html#CSVC">Cơ Sở Vật Chất</a></li>
-                    <li><a href="#DDHT">Địa Điểm Học Tập</a></li>
-                </ul>
-            </li>
-            <li><a href="#registration">ĐĂNG KÍ TƯ VẤN</a></li>
-            <li class="sub contact"><a href="#">LIÊN HỆ</a></li>
-        </ul>
+      <ul class="menu flex center space-between">
+        <li class="sub"><a href="#"><i class="fa-solid fa-house"></i></a>
+            <ul class="menu submenu">
+                <li><a href="https://ou.edu.vn" target="_blank">Trang Chủ OU</a></li>
+                <li><a href="../index.html">Trang Tuyển Sinh</a></li>
+            </ul>
+        </li>
+        <li class="sub"><a href="#">GIỚI THIỆU</a>
+            <ul class="menu submenu">
+                <li><a href="HTML/gioithieu.html">Lịch Sử Phát Triển</a></li>
+                <li><a href="HTML/visaochonOU.html">Vì Sao Nên Chọn OU?</a></li>
+            </ul>
+        </li>
+        <li class="sub"><a href="#">NGHÀNH ĐÀO TẠO</a>
+            <ul class="menu submenu">
+                <li><a href="HTML/CTDT.html">Các Khoa/Ngành Đại Trà</a></li>
+                <li><a href="#">Chương Trình Chất Lượng Cao</a></li>
+            </ul>
+        </li>
+        <li class="sub"><a href="HTML/diadiemhoc.html">MÔI TRƯỜNG HỌC TẬP</a>
+            <ul class="menu submenu">
+                <li><a href="HTML/diadiemhoc.html#CSVC">Cơ Sở Vật Chất</a></li>
+                <li><a href="#DDHT">Địa Điểm Học Tập</a></li>
+            </ul>
+        </li>
+        <li><a href="#registration">ĐĂNG KÍ TƯ VẤN</a></li>
+        <li class="sub contact"><a href="#">LIÊN HỆ</a></li>
+      </ul>  
     </nav>
+    <!-- aside -->
     <aside >
         <div class="img-group">
             <img src="image/tuyensinh_0.png" alt="TS" id="ads-image">
@@ -63,6 +72,7 @@
             </div>        
         </div>
     </aside>
+
     <main>
         <section class="flex" id="information">
             <div class="admission-information center ">

@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   //MODAL
 
   let modal = document.getElementById("myModal");
-  modal.style.display = "none";
+  // modal.style.display = "none";
 
   let contact = document.querySelector(".contact");
   let close = document.querySelector(".close");
