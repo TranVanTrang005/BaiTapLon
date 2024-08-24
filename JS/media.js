@@ -5,7 +5,4 @@ window.addEventListener("load", function() {
       showmenu.classList.toggle("active");
       menu.classList.toggle("block");
     }
-    function hidden(){
-        
-    }
-  })
+});
