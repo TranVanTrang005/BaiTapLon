@@ -13,6 +13,7 @@
     <script src="JS/modal.js"></script>
     <script src="JS/DDHT.js"></script>
     <script src="JS/media.js"></script>
+    <script src="JS/GoToTop.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -190,98 +191,101 @@
           </div>
         </div>
       </footer>
+      <!-- go to top -->
+      <div class="GoTop">
+        <a id="myLink" href="#"> <img src="image/go-to-top.png" alt="Go To Top"></a>
+      </div>
     </div>
     <!-- MAIN-CONTAINER -->
 
-    <!-- FOOTER1 -->
-     
-      <!-- FOOTER2 -->
-  
-      <footer class="footer-2">
-        <div class="footer-2-wrapper">
-          <div class="container flex">
-            <div id="col-1">
-              <img
-                class="img-responsive"
-                src="image/Logo.png"
-                alt="LOGO-OU"
-              />
-              <hr />
-              <div class="information">
-                <p>
-                  Phòng 604 (Lầu 6), số 35 - 37 Hồ Hảo Hớn, Phường Cô Giang, Quận
-                  1, Thành phố Hồ Chí Minh, Việt Nam.
-                </p>
-                <p>Điện thoại: (84-028) 3838.6603</p>
-                <p>Email: fcs@ou.edu.vn</p>
-                <p>Website: www.ou.edu.vn</p>
-              </div>
-            </div>
-            <div id="col-2">
-              <div class="footer-linebreak"></div>
-              <h4>CƠ SỞ HỌC TẬP</h4>
-              <p>Địa điểm: Khu dân cư Nhơn Đức, Huyện Nhà Bè, TP. Hồ Chí Minh.</p>
-            </div>
-            <div id="col-3">
-              <div class="footer-linebreak"></div>
-              <h4>DANH MỤC</h4>
-              <ul>
-                <li><a href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a></li>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
-                <li><a href="#"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
-              </ul>
-            </div>
+   
+  <!-- FOOTER2 -->
+  <footer class="footer-2">
+    <div class="footer-2-wrapper">
+      <div class="container flex">
+        <div id="col-1">
+          <img
+            class="img-responsive"
+            src="image/Logo.png"
+            alt="LOGO-OU"
+          />
+          <hr />
+          <div class="information">
+            <p>
+              Phòng 604 (Lầu 6), số 35 - 37 Hồ Hảo Hớn, Phường Cô Giang, Quận
+              1, Thành phố Hồ Chí Minh, Việt Nam.
+            </p>
+            <p>Điện thoại: (84-028) 3838.6603</p>
+            <p>Email: fcs@ou.edu.vn</p>
+            <p>Website: www.ou.edu.vn</p>
           </div>
         </div>
-        <div class="media-and-copyright-container" >
-          <div class="copyright">© 2024 TRƯỜNG ĐẠI HỌC MỞ TP HCM.</div>
-          <ul class="media-container flex">
-            <a href="#">
-              <li class="media-icon"><i class="fa-brands fa-square-facebook"></i></li>
-            </a>
-            <a href="#">
-              <li class="media-icon"><i class="fa-brands fa-youtube"></i></li>
-            </a>
-            <a href="#">
-              <li class="media-icon"><i class="fa-brands fa-instagram"></i></li>
-            </a>
-            <a href="#">
-              <li class="media-icon"><i class="fa-brands fa-square-x-twitter"></i></li>
-            </a>
+        <div id="col-2">
+          <div class="footer-linebreak"></div>
+          <h4>CƠ SỞ HỌC TẬP</h4>
+          <p>Địa điểm: Khu dân cư Nhơn Đức, Huyện Nhà Bè, TP. Hồ Chí Minh.</p>
+        </div>
+        <div id="col-3">
+          <div class="footer-linebreak"></div>
+          <h4>DANH MỤC</h4>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a></li>
+            <li><a href="#"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
           </ul>
         </div>
-        
-      </footer>
-  
-      <!-- FOOTER2 -->
-  
-      <!-- MODAL -->
-  
-      <div class="modal" id="myModal">
-        <div class="modal-container animate__animated animate__fadeInDownBig">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>LIÊN HỆ</h2>
-          </div>
-          <div class="modal-body">
-            <form class="contact-form" id="contact-form">
-              <h5>Họ và tên</h5>
-              <input type="text" class="info" id="name" />
-              <h5>Email</h5>
-              <input type="text" class="info" id="email" />
-              <h5>Tiêu đề</h5>
-              <input type="text" class="info" id="title" />
-              <h5>Nội dung</h5>
-              <textarea rows="5" cols="80" class="info" id="content"></textarea>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button class="abort" id="abort">Hủy</button>
-            <button class="submit" id="submit">Gửi</button>
-          </div>
-        </div>
       </div>
-  
-      <!-- MODAL -->
+    </div>
+    <div class="media-and-copyright-container" >
+      <div class="copyright">© 2024 TRƯỜNG ĐẠI HỌC MỞ TP HCM.</div>
+      <ul class="media-container flex">
+        <a href="#">
+          <li class="media-icon"><i class="fa-brands fa-square-facebook"></i></li>
+        </a>
+        <a href="#">
+          <li class="media-icon"><i class="fa-brands fa-youtube"></i></li>
+        </a>
+        <a href="#">
+          <li class="media-icon"><i class="fa-brands fa-instagram"></i></li>
+        </a>
+        <a href="#">
+          <li class="media-icon"><i class="fa-brands fa-square-x-twitter"></i></li>
+        </a>
+      </ul>
+    </div>
+    
+  </footer>
+
+  <!-- FOOTER2 -->
+
+  <!-- MODAL -->
+
+  <div class="modal" id="myModal">
+    <div class="modal-container animate__animated animate__fadeInDownBig">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>LIÊN HỆ</h2>
+      </div>
+      <div class="modal-body">
+        <form class="contact-form" id="contact-form">
+          <h5>Họ và tên</h5>
+          <input type="text" class="info" id="name" />
+          <h5>Email</h5>
+          <input type="text" class="info" id="email" />
+          <h5>Tiêu đề</h5>
+          <input type="text" class="info" id="title" />
+          <h5>Nội dung</h5>
+          <textarea rows="5" cols="80" class="info" id="content"></textarea>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="abort" id="abort">Hủy</button>
+        <button class="submit" id="submit">Gửi</button>
+      </div>
+    </div>
+  </div>
+
+      
+  <!-- MODAL -->
 </body>
 </html>

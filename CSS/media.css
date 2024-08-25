@@ -89,6 +89,11 @@
         padding: 0;
     }
 
+    /*go to top*/
+    .GoTop{
+        
+    }
+
 }
 
 @media (max-width: 558px) {
