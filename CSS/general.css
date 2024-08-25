@@ -22,15 +22,19 @@ body {
 
 .main-container {
   background-color: white !important;
-  border: 1px solid white;;
-}
-
-header, nav, main, aside, .container-nav{
+  border: 1px solid white;
   width: var(--width-size) !important;
   margin: 0 auto;
   font-size: 16px;
   border: 1px solid white;
 }
+
+/* header, nav, main, aside, .container-nav{
+  width: var(--width-size) !important;
+  margin: 0 auto;
+  font-size: 16px;
+  border: 1px solid white;
+} */
 
 .container {
   margin-right: auto;
@@ -53,11 +57,11 @@ a:visited {
   height: auto;
 }
 
-body .main-container {
+/* body .main-container {
   width: var(--width-size);
   margin: 0 auto;
   background-color: #e9ebee;
-}
+} */
 
 .flex {
   display: flex;

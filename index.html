@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <header class="flex center space-between">
+    <!-- MAIN-CONTAINER -->
+    <div class="main-container">
+      <!-- header-->
+      <header class="flex center space-between">
         <div class="flex center">
             <img src="image/logoOU.png" alt="LOGO-OU">
             <h2 >CỔNG THÔNG TIN TUYỂN SINH TRƯỜNG ĐẠI HỌC MỞ</h2>
@@ -26,173 +29,171 @@
             <p class="request">Vui lòng viết có dấu</p>
             <button type="button" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-    </header>
-    <!-- nav -->
-    <div class="container-nav">
-      <div class="showmenu">
-        <div class="flex center">
-          <ul id="showmenu">
-            <li class="showmenu-btn"></li>
-            <li class="showmenu-btn"></li>
-            <li class="showmenu-btn"></li>
+      </header>
+      <!-- nav -->
+      <div class="container-nav">
+        <div class="showmenu">
+          <div class="flex center">
+            <ul id="showmenu">
+              <li class="showmenu-btn"></li>
+              <li class="showmenu-btn"></li>
+              <li class="showmenu-btn"></li>
+            </ul>
+            <span style="color: white;">&nbsp Danh Mục</span>
+          </div>
+        </div>
+        <nav id="menu">
+          <ul class="menu flex center space-between">
+            <li class="sub"><a id="myLink" href="#"><i class="fa-solid fa-house"></i></a>
+                <ul class="menu submenu">
+                    <li><a href="https://ou.edu.vn" target="_blank">Trang Chủ OU</a></li>
+                    <li><a href="../index.html">Trang Tuyển Sinh</a></li>
+                </ul>
+            </li>
+            <li class="sub" ><a id="myLink" href="#">GIỚI THIỆU</a>
+                <ul class="menu submenu">
+                    <li><a href="HTML/gioithieu.html">Lịch Sử Phát Triển</a></li>
+                    <li><a href="HTML/visaochonOU.html">Vì Sao Nên Chọn OU?</a></li>
+                </ul>
+            </li>
+            <li class="sub" ><a id="myLink" href="#">NGHÀNH ĐÀO TẠO</a>
+                <ul class="menu submenu">
+                    <li><a href="HTML/CTDT.html">Các Khoa/Ngành Đại Trà</a></li>
+                    <li><a href="#">Chương Trình Chất Lượng Cao</a></li>
+                </ul>
+            </li>
+            <li class="sub"><a href="HTML/diadiemhoc.html">MÔI TRƯỜNG HỌC TẬP</a>
+                <ul class="menu submenu">
+                    <li><a href="HTML/diadiemhoc.html#CSVC">Cơ Sở Vật Chất</a></li>
+                    <li><a href="#DDHT">Địa Điểm Học Tập</a></li>
+                </ul>
+            </li>
+            <li><a href="#registration">ĐĂNG KÍ TƯ VẤN</a></li>
+            <li class="sub contact" ><a id="myLink" href="#">LIÊN HỆ</a></li>
+            <li>
+              <form class="Search" id="menuSearch">
+                <input type="text" placeholder="Search.." id="search"/>
+                <button type="button" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+          </li>
           </ul>
-          <span style="color: white;">&nbsp Danh Mục</span>
-        </div>
+        </nav>
       </div>
-      <nav id="menu">
-        <ul class="menu flex center space-between">
-          <li class="sub"><a id="myLink" href="#"><i class="fa-solid fa-house"></i></a>
-              <ul class="menu submenu">
-                  <li><a href="https://ou.edu.vn" target="_blank">Trang Chủ OU</a></li>
-                  <li><a href="../index.html">Trang Tuyển Sinh</a></li>
-              </ul>
-          </li>
-          <li class="sub" ><a id="myLink" href="#">GIỚI THIỆU</a>
-              <ul class="menu submenu">
-                  <li><a href="HTML/gioithieu.html">Lịch Sử Phát Triển</a></li>
-                  <li><a href="HTML/visaochonOU.html">Vì Sao Nên Chọn OU?</a></li>
-              </ul>
-          </li>
-          <li class="sub" ><a id="myLink" href="#">NGHÀNH ĐÀO TẠO</a>
-              <ul class="menu submenu">
-                  <li><a href="HTML/CTDT.html">Các Khoa/Ngành Đại Trà</a></li>
-                  <li><a href="#">Chương Trình Chất Lượng Cao</a></li>
-              </ul>
-          </li>
-          <li class="sub"><a href="HTML/diadiemhoc.html">MÔI TRƯỜNG HỌC TẬP</a>
-              <ul class="menu submenu">
-                  <li><a href="HTML/diadiemhoc.html#CSVC">Cơ Sở Vật Chất</a></li>
-                  <li><a href="#DDHT">Địa Điểm Học Tập</a></li>
-              </ul>
-          </li>
-          <li><a href="#registration">ĐĂNG KÍ TƯ VẤN</a></li>
-          <li class="sub contact" ><a id="myLink" href="#">LIÊN HỆ</a></li>
-          <li>
-            <form class="Search" id="menuSearch">
-              <input type="text" placeholder="Search.." id="search"/>
-              <button type="button" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-         </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- aside -->
-    <aside >
-        <div class="img-group">
-            <img src="image/tuyensinh_0.png" alt="TS" id="ads-image">
-            <div class="radio-group">
-                <input type="radio" value="0" checked="checked"/> 
-                <input type="radio" value="1" /> 
-                <input type="radio" value="2" /> 
-            </div>        
-        </div>
-    </aside>
-
-    <main>
-        <section class="flex" id="information">
-            <div class="admission-information center ">
-                <h2>THÔNG TIN TUYỂN SINH</h2>
-                <div class= "flex">
-                    <div>
-                        <a href="#"><img src="image/OU_Hot.jpg" alt="OU"></a>
-                        <a href="#">Cùng tìm hiểu lý do vì sao nên chọn OU</a>
-                    </div>
-                    <div>
-                        <img src="image/OU_DiemChuan.jpg" alt="OU">
-                        <a href="#">Thông báo điểm chuẩn trúng tuyển đại học chính quy</p>
-                    </div>   
-                    <div>
-                        <img src="image/OU_NhapHoc.png" alt="OU">
-                        <a href="#">Thông xác nhận nhập học trực tuyến</a>
-                    </div>
-                    <div>
-                        <img src="image/OU_XacNhan.png" alt="OU">
-                        <a href="#">Hướng dẫn tân sinh viên xác nhận học tập trực tuyến</a>
-                    </div>
+      <!-- aside -->
+      <aside >
+          <div class="img-group">
+              <img src="image/tuyensinh_0.png" alt="TS" id="ads-image">
+              <div class="radio-group">
+                  <input type="radio" value="0" checked="checked"/> 
+                  <input type="radio" value="1" /> 
+                  <input type="radio" value="2" /> 
+              </div>        
+          </div>
+      </aside>
+      <section class="flex" id="information">
+        <div class="admission-information center ">
+            <h2>THÔNG TIN TUYỂN SINH</h2>
+            <div class= "flex">
+                <div>
+                    <a href="#"><img src="image/OU_Hot.jpg" alt="OU"></a>
+                    <a href="#">Cùng tìm hiểu lý do vì sao nên chọn OU</a>
+                </div>
+                <div>
+                    <img src="image/OU_DiemChuan.jpg" alt="OU">
+                    <a href="#">Thông báo điểm chuẩn trúng tuyển đại học chính quy</p>
+                </div>   
+                <div>
+                    <img src="image/OU_NhapHoc.png" alt="OU">
+                    <a href="#">Thông xác nhận nhập học trực tuyến</a>
+                </div>
+                <div>
+                    <img src="image/OU_XacNhan.png" alt="OU">
+                    <a href="#">Hướng dẫn tân sinh viên xác nhận học tập trực tuyến</a>
                 </div>
             </div>
-            <div class="news">
-                <h2>TIN NỔI BẬT</h2>
-                <div><a href="#"> Thông báo tổ chức kỳ thi đánh giá năng lực Tiếng anh đầu vào Tân sinh viên Khóa 2024</a></div>
-                <div><a href="#"> Thông báo hướng dẫn Tân sinh viên khóa 2024 nộp hồ sơ xét miễn giảm môn học
-                     (Tiếng Anh không chuyên, Ngoại ngữ hai, Tin học văn phòng nâng cao và các môn học khác)</a></div>
-                <div><a href="#">Thông báo tuyển sinh Chương trình liên kết quốc tế Đại học Bond, Úc năm 2024</a></div>     
-            </div>  
-        </section>
-        <section id="registration">
-            <fieldset class="registration">
-                <legend><h2>ĐĂNG KÝ ĐỂ ĐƯỢC TƯ VẤN TRỰC TUYẾN 24/7</h2></legend>
-                <form class="registration-form">
-                    <input id="name" type="text" placeholder="Họ và tên"/>
-                    <input type="text" placeholder="Ngày tháng năm sinh" title="dd/mm/yyyy">
-                    <input type="email" placeholder="Email của bạn"/>
-                    <input type="tel" placeholder="Số điện thoại"/>
-                    <input type="text" placeholder="Trường THPT đã học"/>
-                    <select>
-                        <option value="">--Tỉnh/Thành--</option>
-                        <option value="HCM">Hồ Chí Minh</option>
-                        <option value="HN">Hà Nội</option>
-                        <option value="">Khác</option>
-                    </select>
-                    <textarea id="question" rows="5" cols="5" placeholder="Bạn có câu hỏi gì cho chúng tôi không?"></textarea>
-                </form>
-                <button id="Sign up" type="submit"><span>ĐĂNG KÝ</span></button>
-            </fieldset>
-        </section>
-        <!-- FOOTER1 -->
+        </div>
+        <div class="news">
+            <h2>TIN NỔI BẬT</h2>
+            <div><a href="#"> Thông báo tổ chức kỳ thi đánh giá năng lực Tiếng anh đầu vào Tân sinh viên Khóa 2024</a></div>
+            <div><a href="#"> Thông báo hướng dẫn Tân sinh viên khóa 2024 nộp hồ sơ xét miễn giảm môn học
+                 (Tiếng Anh không chuyên, Ngoại ngữ hai, Tin học văn phòng nâng cao và các môn học khác)</a></div>
+            <div><a href="#">Thông báo tuyển sinh Chương trình liên kết quốc tế Đại học Bond, Úc năm 2024</a></div>     
+        </div>  
+      </section>
+      <section id="registration">
+        <fieldset class="registration">
+            <legend><h2>ĐĂNG KÝ ĐỂ ĐƯỢC TƯ VẤN TRỰC TUYẾN 24/7</h2></legend>
+            <form class="registration-form">
+                <input id="name" type="text" placeholder="Họ và tên"/>
+                <input type="text" placeholder="Ngày tháng năm sinh" title="dd/mm/yyyy">
+                <input type="email" placeholder="Email của bạn"/>
+                <input type="tel" placeholder="Số điện thoại"/>
+                <input type="text" placeholder="Trường THPT đã học"/>
+                <select>
+                    <option value="">--Tỉnh/Thành--</option>
+                    <option value="HCM">Hồ Chí Minh</option>
+                    <option value="HN">Hà Nội</option>
+                    <option value="">Khác</option>
+                </select>
+                <textarea id="question" rows="5" cols="5" placeholder="Bạn có câu hỏi gì cho chúng tôi không?"></textarea>
+            </form>
+            <button id="Sign up" type="submit"><span>ĐĂNG KÝ</span></button>
+        </fieldset>
+      </section>
+      <!-- FOOTER1 -->
 
-        <footer class="flex footer-1" id="DDHT">
-          <div class="left">
-            <h2 style="font-size: 2em">Cơ sở <b style="color: red">đào tạo</b></h2>
-            <div class="location">
-              <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.727964613623!2d106.6890907!3d10.77635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3ae35e3725%3A0x20c5174a47f97be3!2sHCMC%20Open%20University%20-%20Campus%201!5e0!3m2!1sen!2s!4v1723045579702!5m2!1sen!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
-              <h3>Cơ sở 1: 97 Võ Văn Tần P6 Q3 Tp.HCM</h3>
-            
-            </div>
-            <div class="location">
-              <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.6581948989224!2d106.6896943!3d10.7608041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f114014707f%3A0x3f198b980ca59fdf!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDI!5e0!3m2!1svi!2s!4v1723042757717!5m2!1svi!2s" >
-                <i class="fa-solid fa-location-dot location-dot"></i></div>
-              <h3>Cơ sở 2: 35-37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Tp. Hồ Chí Minh.</h3>
-              
-            </div>
-            <div class="location">
-              <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3920.748477728001!2d106.6894065!3d10.676621!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2sCity%20Open%20University.%20Ho%20Chi%20Minh%20(campus%203)!5e0!3m2!1sen!2s!4v1723045352738!5m2!1sen!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
-              <h3>Cơ sở 3: Khu Dân cư Nhơn Đức, Huyện Nhà Bè, Thành phố Hồ Chí Minh.</h3>
-            
-            </div>
-            <div class="location">
-              <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.6408278862355!2d106.6990772!3d10.7897267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529e8d744f63d%3A0x31898635045b854c!2zMiDEkC4gTWFpIFRo4buLIEzhu7F1LCDEkGEgS2FvLCBQaMO6IE5odeG6rW4sIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1723045248260!5m2!1svi!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
-              <h3>Cơ sở 4: 02 Mai Thị Lựu, Phường Đa Kao, Quận 1, Tp. Hồ Chí Minh.</h3>
-              
-            </div>
-            <div class="location">
-              <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3916.6965508039907!2d106.6715896!3d10.9862616!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d11f9dabb983%3A0x319be7faa14dc1ed!2sHCMC%20Open%20University%20-%20Binh%20Duong%20Campus!5e0!3m2!1sen!2s!4v1723045465203!5m2!1sen!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
-              <h3>Cơ sở 5: 68 Lê Thị Trung, Tp.Thủ Dầu Một, Tỉnh Bình Dương.</h3>
-            
-            </div>
-            <div class="location">
-              <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3917.746643877618!2d106.8503496!3d10.9068493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174df036dcc0eb5%3A0x24fd189798445572!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCBDUzI!5e0!3m2!1sen!2s!4v1723045523253!5m2!1sen!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
-              <h3>Cơ sở 6: Phường Long Bình Tân, Tp. Biên Hòa, Tỉnh Đồng Nai.</h3>
-            
-            </div>
+      <footer class="flex footer-1" id="DDHT">
+        <div class="left">
+          <h2 style="font-size: 2em">Cơ sở <b style="color: red">đào tạo</b></h2>
+          <div class="location">
+            <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.727964613623!2d106.6890907!3d10.77635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3ae35e3725%3A0x20c5174a47f97be3!2sHCMC%20Open%20University%20-%20Campus%201!5e0!3m2!1sen!2s!4v1723045579702!5m2!1sen!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
+            <h3>Cơ sở 1: 97 Võ Văn Tần P6 Q3 Tp.HCM</h3>
+          
           </div>
-          <div class="right">
-              <iframe id="mainscreen"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.727964613623!2d106.6890907!3d10.77635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3ae35e3725%3A0x20c5174a47f97be3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDE!5e0!3m2!1svi!2s!4v1723036397696!5m2!1svi!2s"
-                width="100%"
-                height="100%"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+          <div class="location">
+            <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.6581948989224!2d106.6896943!3d10.7608041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f114014707f%3A0x3f198b980ca59fdf!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDI!5e0!3m2!1svi!2s!4v1723042757717!5m2!1svi!2s" >
+              <i class="fa-solid fa-location-dot location-dot"></i></div>
+            <h3>Cơ sở 2: 35-37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Tp. Hồ Chí Minh.</h3>
+            
           </div>
-        </footer>
+          <div class="location">
+            <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3920.748477728001!2d106.6894065!3d10.676621!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2sCity%20Open%20University.%20Ho%20Chi%20Minh%20(campus%203)!5e0!3m2!1sen!2s!4v1723045352738!5m2!1sen!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
+            <h3>Cơ sở 3: Khu Dân cư Nhơn Đức, Huyện Nhà Bè, Thành phố Hồ Chí Minh.</h3>
+          
+          </div>
+          <div class="location">
+            <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.6408278862355!2d106.6990772!3d10.7897267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529e8d744f63d%3A0x31898635045b854c!2zMiDEkC4gTWFpIFRo4buLIEzhu7F1LCDEkGEgS2FvLCBQaMO6IE5odeG6rW4sIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1723045248260!5m2!1svi!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
+            <h3>Cơ sở 4: 02 Mai Thị Lựu, Phường Đa Kao, Quận 1, Tp. Hồ Chí Minh.</h3>
+            
+          </div>
+          <div class="location">
+            <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3916.6965508039907!2d106.6715896!3d10.9862616!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d11f9dabb983%3A0x319be7faa14dc1ed!2sHCMC%20Open%20University%20-%20Binh%20Duong%20Campus!5e0!3m2!1sen!2s!4v1723045465203!5m2!1sen!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
+            <h3>Cơ sở 5: 68 Lê Thị Trung, Tp.Thủ Dầu Một, Tỉnh Bình Dương.</h3>
+          
+          </div>
+          <div class="location">
+            <div value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3917.746643877618!2d106.8503496!3d10.9068493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174df036dcc0eb5%3A0x24fd189798445572!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCBDUzI!5e0!3m2!1sen!2s!4v1723045523253!5m2!1sen!2s"><i class="fa-solid fa-location-dot location-dot"></i></div>
+            <h3>Cơ sở 6: Phường Long Bình Tân, Tp. Biên Hòa, Tỉnh Đồng Nai.</h3>
+          
+          </div>
+        </div>
+        <div class="right">
+            <iframe id="mainscreen"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.727964613623!2d106.6890907!3d10.77635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3ae35e3725%3A0x20c5174a47f97be3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDE!5e0!3m2!1svi!2s!4v1723036397696!5m2!1svi!2s"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- MAIN-CONTAINER -->
 
     <!-- FOOTER1 -->
-
-    </main>
      
       <!-- FOOTER2 -->
   

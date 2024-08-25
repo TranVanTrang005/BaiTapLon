@@ -1,0 +1,86 @@
+.text-container p {
+  text-indent: 2rem;
+}
+
+.reason-container {
+  width: 95%;
+  padding-bottom: 20px;
+  margin: 10px auto;
+}
+
+.reason-container > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reason-container > ul > li {
+  background-color: lightgray;
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px darkgray;
+}
+
+.reason-title {
+  color: #ff9900;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px;
+  position: relative;
+  width: 95%;
+}
+.reason-title .dropdown-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid gray;
+  position: absolute;
+  right: -16px;
+  bottom: 16px;
+}
+
+.reason-title .dropdown-arrow.active {
+  border-top: 10px solid gray;
+  border-left: 10px solid transparent;
+  bottom: 8px;
+  right: -8px;
+}
+
+/* .reason-text {
+  background-color: darkgray;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  visibility: collapse;
+  padding: 10px;
+  transition: 0.25s linear;
+}
+
+.reason-container li:hover {
+  background-color: rgba(84, 80, 80, 0.3);
+}
+
+.reason-container li:hover .reason-text {
+  top: 100%;
+  visibility: visible;
+} */
+
+.reason-text {
+  background-color: darkgray;
+  width: 100%;
+  padding: 10px;
+  transition: visibility 0s, opacity 0.5s linear;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.reason-container li:hover {
+  background-color: rgba(84, 80, 80, 0.3);
+}
