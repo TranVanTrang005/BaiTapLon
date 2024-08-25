@@ -63,3 +63,15 @@
     visibility: collapse;
 }
 
+/*MEDIA*/
+@media only screen and (max-width: 768px){
+    .faculties {
+        flex-direction: column;
+    }
+    .faculty {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+

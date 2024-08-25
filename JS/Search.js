@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
         function scrollQueue() {
             if(scrollArr.length > 0){
                 let x = scrollArr.shift();
-                blinkBorder(x);
+                blinkBorder(x.parentElement);
                 scrollToFaculty(x.parentElement.parentElement.id);
                 setTimeout(scrollQueue,1800);
             }
@@ -29,7 +29,7 @@ window.addEventListener("load", function() {
             if (count >= maxBlinks * 2) {
                 clearInterval(interval);
             } else {
-                element.parentElement.style.border = (count % 2 === 0) ? "3px solid red" : "none";
+                element.style.border = (count % 2 === 0) ? "3px solid red" : "none";
                 count++;
             }
         }, 300); 

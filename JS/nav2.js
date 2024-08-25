@@ -24,7 +24,7 @@ window.addEventListener("load", function() {
      let count1 = 0;
      function changeImg() {
         count1=(count1+1)%3;
-        img.src = `image/tuyensinh_${count1}.png`;
+        img.src = `../image/tuyensinh_${count1}.png`;
         animated();
         inputs[count1].checked=true;
         notCheck(inputs[count1]);
@@ -37,7 +37,7 @@ window.addEventListener("load", function() {
         input.onclick=function() {
             count1=this.value;
             notCheck(this);
-            img.src = `image/tuyensinh_${this.value}.png`;
+            img.src = `../image/tuyensinh_${this.value}.png`;
             //
             animated();
         }

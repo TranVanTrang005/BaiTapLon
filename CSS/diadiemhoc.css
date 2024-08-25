@@ -25,7 +25,7 @@
 }
 
 .thumb-box {
-  width: 800px;
+  width: 100%;
   overflow: auto;
   display: flex;
   box-sizing: border-box;

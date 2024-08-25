@@ -1,4 +1,3 @@
-
 .openings {
   width: 80%;
   margin: 5px auto;
@@ -148,85 +147,148 @@
 
 /* VERTICAL TIMELINE */
 
-.timeline-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 0;
-}
-.timeline {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
+@media (min-width: 768px) {
+  .timeline-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .timeline {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .timeline ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /*Middle line*/
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+    background-color: #00557a;
+    padding: 20px;
+    color: white;
+    transition: 0.25s linear;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translate(-15px, 15px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translate(15px, 15px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  /*Dot*/
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    right: -26px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    left: -24px;
+  }
+  .timeline-content .date {
+    color: black;
+    position: absolute;
+    top: -45px;
+  }
+
+  .timeline-content {
+    cursor: pointer;
+  }
+  .timeline-content .timeline-text {
+    display: none;
+  }
+
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
 }
 
-.timeline ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-/*Middle line*/
-.timeline:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-  background-color: gray;
-}
-.timeline ul li {
-  width: 50%;
-  position: relative;
-  margin-bottom: 50px;
-  background-color: #00557a;
-  padding: 20px;
-  color: white;
-  transition: 0.25s linear;
-}
-.timeline ul li:nth-child(odd) {
-  float: left;
-  clear: right;
-  transform: translate(-15px, 15px);
-  border-radius: 20px 0px 20px 20px;
-}
-.timeline ul li:nth-child(even) {
-  float: right;
-  clear: left;
-  transform: translate(15px, 15px);
-  border-radius: 0px 20px 20px 20px;
-}
-/*Dot*/
-.timeline ul li::before {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: gray;
-  top: 0px;
-}
-.timeline ul li:nth-child(odd)::before {
-  right: -26px;
-}
-.timeline ul li:nth-child(even)::before {
-  left: -24px;
-}
-.timeline-content .date {
-  color: black;
-  position: absolute;
-  top: -45px;
+/* MEDIA */
+
+@media (max-width: 768px) {
+  /* BOX 1 */
+  .openings {
+    width: 100%;
+  }
+  /* BOX 2 */
+  .missions {
+    width: 100%;
+  }
+  /* BOX 3 */
+  .box3 .item-container {
+    display: block;
+    width: 100%;
+  }
+  .box3 .item-container > div {
+    width: 100%;
+  }
+  .item-container > div:hover {
+    width: 100%;
+  }
+  /*TIMELINE*/
+  .timeline {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .timeline ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .timeline ul li {
+    width: 48%;
+    padding: 5px 15px;
+    background-color: #00557a;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+
+  .timeline-content .date {
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
 }
 
-.timeline-content {
-  cursor: pointer;
-}
-.timeline-content .timeline-text {
-  display: none;
-}
-
-.timeline ul li:hover::before {
-  background-color: aqua;
+@media (max-width: 558px) {
+  .timeline ul {
+    display: block;
+  }
+  .timeline ul li {
+    width: 100%;
+  }
 }

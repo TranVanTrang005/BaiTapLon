@@ -17,51 +17,65 @@
 </head>
 <body>
     <header class="flex center space-between">
-        <div class="flex">
+        <div class="flex center">
             <img src="image/logoOU.png" alt="LOGO-OU">
-            <h2 >CỔNG THÔNG TIN TUYỂN SINH <br><span>TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH</span></h2>
+            <h2 >CỔNG THÔNG TIN TUYỂN SINH TRƯỜNG ĐẠI HỌC MỞ</h2>
         </div>
         <form class="Search">
             <input type="text" placeholder="Search.." id="search"/>
+            <p class="request">Vui lòng viết có dấu</p>
             <button type="button" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
-         </form>
+        </form>
     </header>
     <!-- nav -->
-    <ul id="showmenu">
-      <li class="showmenu-btn"></li>
-      <li class="showmenu-btn"></li>
-      <li class="showmenu-btn"></li>
-    </ul>
-    <nav>
-      <ul class="menu flex center space-between">
-        <li class="sub"><a href="#"><i class="fa-solid fa-house"></i></a>
-            <ul class="menu submenu">
-                <li><a href="https://ou.edu.vn" target="_blank">Trang Chủ OU</a></li>
-                <li><a href="../index.html">Trang Tuyển Sinh</a></li>
-            </ul>
-        </li>
-        <li class="sub"><a href="#">GIỚI THIỆU</a>
-            <ul class="menu submenu">
-                <li><a href="HTML/gioithieu.html">Lịch Sử Phát Triển</a></li>
-                <li><a href="HTML/visaochonOU.html">Vì Sao Nên Chọn OU?</a></li>
-            </ul>
-        </li>
-        <li class="sub"><a href="#">NGHÀNH ĐÀO TẠO</a>
-            <ul class="menu submenu">
-                <li><a href="HTML/CTDT.html">Các Khoa/Ngành Đại Trà</a></li>
-                <li><a href="#">Chương Trình Chất Lượng Cao</a></li>
-            </ul>
-        </li>
-        <li class="sub"><a href="HTML/diadiemhoc.html">MÔI TRƯỜNG HỌC TẬP</a>
-            <ul class="menu submenu">
-                <li><a href="HTML/diadiemhoc.html#CSVC">Cơ Sở Vật Chất</a></li>
-                <li><a href="#DDHT">Địa Điểm Học Tập</a></li>
-            </ul>
-        </li>
-        <li><a href="#registration">ĐĂNG KÍ TƯ VẤN</a></li>
-        <li class="sub contact"><a href="#">LIÊN HỆ</a></li>
-      </ul>  
-    </nav>
+    <div class="container-nav">
+      <div class="showmenu">
+        <div class="flex center">
+          <ul id="showmenu">
+            <li class="showmenu-btn"></li>
+            <li class="showmenu-btn"></li>
+            <li class="showmenu-btn"></li>
+          </ul>
+          <span style="color: white;">&nbsp Danh Mục</span>
+        </div>
+      </div>
+      <nav id="menu">
+        <ul class="menu flex center space-between">
+          <li class="sub"><a id="myLink" href="#"><i class="fa-solid fa-house"></i></a>
+              <ul class="menu submenu">
+                  <li><a href="https://ou.edu.vn" target="_blank">Trang Chủ OU</a></li>
+                  <li><a href="../index.html">Trang Tuyển Sinh</a></li>
+              </ul>
+          </li>
+          <li class="sub" ><a id="myLink" href="#">GIỚI THIỆU</a>
+              <ul class="menu submenu">
+                  <li><a href="HTML/gioithieu.html">Lịch Sử Phát Triển</a></li>
+                  <li><a href="HTML/visaochonOU.html">Vì Sao Nên Chọn OU?</a></li>
+              </ul>
+          </li>
+          <li class="sub" ><a id="myLink" href="#">NGHÀNH ĐÀO TẠO</a>
+              <ul class="menu submenu">
+                  <li><a href="HTML/CTDT.html">Các Khoa/Ngành Đại Trà</a></li>
+                  <li><a href="#">Chương Trình Chất Lượng Cao</a></li>
+              </ul>
+          </li>
+          <li class="sub"><a href="HTML/diadiemhoc.html">MÔI TRƯỜNG HỌC TẬP</a>
+              <ul class="menu submenu">
+                  <li><a href="HTML/diadiemhoc.html#CSVC">Cơ Sở Vật Chất</a></li>
+                  <li><a href="#DDHT">Địa Điểm Học Tập</a></li>
+              </ul>
+          </li>
+          <li><a href="#registration">ĐĂNG KÍ TƯ VẤN</a></li>
+          <li class="sub contact" ><a id="myLink" href="#">LIÊN HỆ</a></li>
+          <li>
+            <form class="Search" id="menuSearch">
+              <input type="text" placeholder="Search.." id="search"/>
+              <button type="button" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+         </li>
+        </ul>
+      </nav>
+    </div>
     <!-- aside -->
     <aside >
         <div class="img-group">

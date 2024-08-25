@@ -68,10 +68,6 @@
     }
 }
 
-.onclick-slide {
-    animation: slide 0.5s linear;
-}
-
 @keyframes animated{
     100% {
         background-position-x: 500px;
