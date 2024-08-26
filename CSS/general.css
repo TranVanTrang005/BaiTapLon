@@ -30,13 +30,6 @@ body {
   border: 1px solid white;
 }
 
-/* header, nav, main, aside, .container-nav{
-  width: var(--width-size) !important;
-  margin: 0 auto;
-  font-size: 16px;
-  border: 1px solid white;
-} */
-
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -57,12 +50,6 @@ a:visited {
   max-width: 100%;
   height: auto;
 }
-
-/* body .main-container {
-  width: var(--width-size);
-  margin: 0 auto;
-  background-color: #e9ebee;
-} */
 
 .flex {
   display: flex;
@@ -158,6 +145,7 @@ header h2 {
 .showmenu{
   display: none;
   background-color: #0063cd !important;
+  padding: 0.5rem;
 }
 
 #showmenu {
@@ -237,7 +225,7 @@ ul.menu > li >a {
   visibility: visible; 
   opacity: 1; 
   transition: opacity 0.5s ease-out;  
-  z-index: 999;        
+  z-index: 998;        
 }
 
 /*aside*/
@@ -384,7 +372,7 @@ aside img{
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   padding-top: 30px; /* Location of the box */
   left: 0;
   top: 0;
