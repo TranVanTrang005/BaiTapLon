@@ -1,24 +1,28 @@
 window.addEventListener("load", function() {
-    let txt = this.document.getElementById("search");
-    let btn = this.document.querySelector(".searchButton");
+    let btns = this.document.querySelectorAll(".searchButton");
     let nameFaculty = this.document.querySelectorAll(".faculty h3");
     let scrollArr= [];
-    btn.onclick = function() {
-        for(let m of nameFaculty) {
-            let info = m.innerText.toLowerCase();
-            if(info.includes(txt.value.toLowerCase()) === true) {
-               scrollArr.push(m);
-            }
+    //scrollQueue
+    function scrollQueue() {
+        if(scrollArr.length > 0){
+            let x = scrollArr.shift();
+            blinkBorder(x.previousElementSibling);
+            scrollToFaculty(x.parentElement.parentElement.id);
+            setTimeout(scrollQueue,1800);
         }
-        function scrollQueue() {
-            if(scrollArr.length > 0){
-                let x = scrollArr.shift();
-                blinkBorder(x.previousElementSibling);
-                scrollToFaculty(x.parentElement.parentElement.id);
-                setTimeout(scrollQueue,1800);
+    }
+
+    for(let btn of btns) {
+        btn.onclick = function() {
+            let txt = btn.previousElementSibling.previousElementSibling;
+            for(let m of nameFaculty) {
+                let info = m.innerText.toLowerCase();
+                if(info.includes(txt.value.toLowerCase()) === true) {
+                   scrollArr.push(m);
+                }
             }
+            scrollQueue();
         }
-        scrollQueue();
     }
     //blink
     function blinkBorder(element) {
