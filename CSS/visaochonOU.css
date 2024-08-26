@@ -50,27 +50,6 @@
   right: -8px;
 }
 
-/* .reason-text {
-  background-color: darkgray;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  visibility: collapse;
-  padding: 10px;
-  transition: 0.25s linear;
-}
-
-.reason-container li:hover {
-  background-color: rgba(84, 80, 80, 0.3);
-}
-
-.reason-container li:hover .reason-text {
-  top: 100%;
-  visibility: visible;
-} */
-
 .reason-text {
   background-color: darkgray;
   width: 100%;

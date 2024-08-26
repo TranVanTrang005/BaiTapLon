@@ -105,6 +105,10 @@ header {
   font-size: 1rem;
 }
 
+header h2 {
+  text-align: center;
+}
+
 .Search {
   display: block;
   align-items: center;
@@ -256,6 +260,15 @@ aside img{
   left: 45%;
 }
 
+@keyframes slide {
+  0% {
+      transform:scale(0.5);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
 .onclick-slide {
   animation: slide 0.5s linear;
 }
@@ -317,6 +330,7 @@ aside img{
   width: 40px;
   height: 1.5px;
   background-color: var(--white);
+  margin-top: 20px;
 }
 
 .footer-2 .container > div {

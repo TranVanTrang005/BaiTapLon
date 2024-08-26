@@ -17,7 +17,11 @@ window.addEventListener("load", function() {
         } 
     }
     function animated() {
-        img.classList.toggle("onclick-slide");
+        img.classList.add("onclick-slide");
+        setTimeout(function() {
+            img.classList.remove("onclick-slide");
+        }, 500);
+        // img.classList.toggle("onclick-slide");
     }
 
      //timeChange
