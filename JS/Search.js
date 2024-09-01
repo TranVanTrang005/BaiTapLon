@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-    let btns = this.document.querySelectorAll(".searchButton");
+    let searchs = this.document.querySelectorAll(".searchButton");
     let nameFaculty = this.document.querySelectorAll(".faculty h3");
     let scrollArr= [];
     //scrollQueue
@@ -12,9 +12,9 @@ window.addEventListener("load", function() {
         }
     }
 
-    for(let btn of btns) {
-        btn.onclick = function() {
-            let txt = btn.previousElementSibling.previousElementSibling;
+    for(let search of searchs) {
+        search.onclick = function() {
+            let txt = search.previousElementSibling.previousElementSibling;
             for(let m of nameFaculty) {
                 let info = m.innerText.toLowerCase();
                 if(info.includes(txt.value.toLowerCase()) === true) {
