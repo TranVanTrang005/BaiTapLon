@@ -1,6 +1,5 @@
 window.addEventListener("load", function () {
     /*registration*/
-
     let reg =document.getElementById("Sign up");
     reg.onclick = function() {
         let flag= true;
@@ -17,6 +16,7 @@ window.addEventListener("load", function () {
         }
         if(flag) {
             alert(`Chào ${info[0].value} chúng tôi đã tiếp nhận thông tin và sẽ sớm phản hồi lại bạn. Chân thành cảm ơn!`);
+            document.querySelector(".registration-form").reset(); //reset form
         }
     }
 });

@@ -10,12 +10,14 @@ window.addEventListener("load", function() {
     /*aside*/
     let img = document.getElementById("ads-image");
     let inputs = document.querySelectorAll("input[type=radio]");
+    //notcheck
     function notCheck(im) {
         for(let input of inputs){
             if(input !== im)
                 input.checked = false;
         } 
     }
+
     function animated() {
         img.classList.add("onclick-slide");
         setTimeout(function() {
